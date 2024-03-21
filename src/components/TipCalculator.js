@@ -12,6 +12,7 @@ function TipCalculator() {
   function handleReset() {
     setBillInput("");
     setTip(0);
+    setNumPeople(1);
   }
 
   return (
