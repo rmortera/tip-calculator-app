@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap"); */
 
+/*
+#02111B
+#3F4045
+#495057
+#30292F
+#5D737E
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +19,14 @@ body {
   font-size: 24px;
   min-height: 100vh;
   color: #495057;
-  background-color: #c5e4e7;
+  background-color: #5d737e;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .container {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -51,10 +59,10 @@ body {
 }
 
 .tip-container {
-  background-color: #00494d;
+  background-color: #02111be3;
   border-radius: 20px;
   width: 100%;
-  color: #f4fafa;
+  color: #ffff;
   display: grid;
   row-gap: 1rem;
   padding: 1rem;
@@ -70,13 +78,13 @@ body {
 
 .output span > strong {
   font-size: 2rem;
-  color: #26c0ab;
+  color: #7a95a3;
   justify-content: end;
 }
 
 .output span {
   font-size: 12px;
-  color: #7f9c9f;
+  color: #b3b9b9;
 }
 
 .output p {
@@ -97,18 +105,25 @@ body {
   padding: 5px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid #5e7a7d;
 }
 
+input {
+  border: 1px solid #02111b42;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #7f9c9f;
+}
 .select-bill span {
   font-size: 12px;
   width: 10px;
 }
 
 .select-tip select {
-  color: #00494d;
+  color: #02111b;
   background-color: #7f9c9f;
-  border: 2px solid #5e7a7d;
+  border: 2px solid #7f9c9f;
   border-radius: 20px;
   margin: 8px 0;
   cursor: pointer;
@@ -119,7 +134,7 @@ body {
 .btnReset {
   font-family: inherit;
   background-color: #5e7a7d;
-  color: #00494d;
+  color: #02111b;
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
@@ -133,6 +148,14 @@ body {
   height: 90%;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #02111b;
+}
+
 @media (max-width: 1920px), (max-height: 1080px) {
   .container {
     display: flex;
@@ -140,7 +163,7 @@ body {
     gap: 1rem;
     min-width: 90vh;
     min-height: 60vh;
-    margin: auto 10px;
+    margin: auto auto 1rem auto;
     padding: 2rem;
   }
   .bill-container {
@@ -183,7 +206,7 @@ body {
   .container {
     min-width: 40vh;
     min-height: 30vh;
-    margin: auto 10px;
+    margin: auto auto 1rem auto;
     padding: 1rem;
     display: block;
     justify-content: space-between;

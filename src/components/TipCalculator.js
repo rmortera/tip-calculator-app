@@ -15,22 +15,25 @@ function TipCalculator() {
   }
 
   return (
-    <div className="container">
-      <div className="bill-container">
-        {" "}
-        <BillInput
-          bill={billInput}
-          setBillInput={setBillInput}
-          numPeople={numPeople}
-          setNumPeople={setNumPeople}
-        />
+    <>
+      <div className="container">
+        <div className="bill-container">
+          {" "}
+          <BillInput
+            bill={billInput}
+            setBillInput={setBillInput}
+            numPeople={numPeople}
+            setNumPeople={setNumPeople}
+          />
+        </div>
+        <div className="tip-container">
+          <SelectPercentage bill={billInput} tip={tip} onTip={setTip} />
+          <OutPut tip={tip} bill={billInput} numPeople={numPeople} />
+          <Reset onReset={handleReset} bill={billInput} />
+        </div>
       </div>
-      <div className="tip-container">
-        <SelectPercentage bill={billInput} tip={tip} onTip={setTip} />
-        <OutPut tip={tip} bill={billInput} numPeople={numPeople} />
-        <Reset onReset={handleReset} bill={billInput} />
-      </div>
-    </div>
+      <footer>Made by Roberto Mortera</footer>
+    </>
   );
 }
 
