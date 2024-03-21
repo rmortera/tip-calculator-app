@@ -10,7 +10,7 @@ function OutPut({ bill, tip, numPeople }) {
           Tip amount <span>/ person</span>
         </p>
         <span>
-          <strong>${numPeople > 0 ? Math.ceil(totalTip) : 0}</strong>
+          <strong>${numPeople > 0 ? Math.ceil(totalTip) : "0"}</strong>
         </span>
       </div>
 
@@ -20,7 +20,7 @@ function OutPut({ bill, tip, numPeople }) {
           Total <span>/ person</span>
         </p>
         <span>
-          <strong>${numPeople > 0 ? Math.ceil(total) : 0}</strong>
+          <strong>${numPeople > 0 ? Math.ceil(total) : "0"}</strong>
         </span>{" "}
       </div>
     </div>

@@ -45,19 +45,16 @@ function BillInput({ bill, setBillInput, numPeople, setNumPeople }) {
       </p>
 
       <input
-        type="number"
+        type="text"
         min="1"
-        onKeyDown={(e) => {
-          e.preventDefault();
-        }}
         placeholder="1"
         value={numPeople}
         onChange={(e) => setNumPeople(Number(e.target.value))}
       ></input>
       {numPeople < 1 ? (
-        <p>
+        <span>
           At least one person is required to calculate the tip amount and total.
-        </p>
+        </span>
       ) : (
         ""
       )}
