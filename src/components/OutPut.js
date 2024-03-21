@@ -1,24 +1,34 @@
 function OutPut({ bill, tip, numPeople }) {
-  const billPerPeople = bill / numPeople;
-  const totalTip = (tip * billPerPeople) / 100;
-  const total = bill + totalTip;
+  const billPerPeople = Math.ceil(bill / numPeople);
+  const amountPerPerson = Math.ceil(
+    (billPerPeople * tip) / 100 + billPerPeople
+  );
+  const totalTip = Math.ceil((tip * billPerPeople) / 100);
+  const total = amountPerPerson * numPeople;
 
   return (
     <div className="output">
       <div>
         <p>
-          Tip amount <span>/ person</span>
+          Tip <span>/ person</span>
         </p>
         <span>
-          <strong>${numPeople > 0 ? Math.ceil(totalTip) : "0"}</strong>
+          <strong>${numPeople > 0 ? totalTip : "0"}</strong>
         </span>
       </div>
 
       <div>
         <p>
           {" "}
-          Total <span>/ person</span>
+          Amount <span>/ person</span>
         </p>
+        <span>
+          <strong>${numPeople > 0 ? Math.ceil(amountPerPerson) : "0"}</strong>
+        </span>{" "}
+      </div>
+
+      <div>
+        <p> Total</p>
         <span>
           <strong>${numPeople > 0 ? Math.ceil(total) : "0"}</strong>
         </span>{" "}

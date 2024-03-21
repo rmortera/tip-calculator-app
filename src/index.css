@@ -219,10 +219,18 @@ footer {
     margin: 10% auto 0 auto;
   }
 
+  .output div {
+    font-size: 20px;
+  }
+
+  .output span > strong {
+    font-size: 25px;
+  }
+
   .btnReset {
     margin: auto auto 0 auto;
     width: 80%;
-    height: 100%;
+    height: 30px;
   }
 }
 
