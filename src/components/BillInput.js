@@ -47,6 +47,11 @@ function BillInput({ bill, setBillInput, numPeople, setNumPeople }) {
       <input
         type="text"
         min="1"
+        onKeyPress={(e) => {
+          if (!/[0-9]/.test(e.key)) {
+            e.preventDefault();
+          }
+        }}
         placeholder="1"
         value={numPeople}
         onChange={(e) => setNumPeople(Number(e.target.value))}

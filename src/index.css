@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap"); */
 
 * {
   margin: 0;
@@ -85,7 +86,7 @@ body {
 .select-bill p {
   font-weight: 500;
   font-size: 1rem;
-  margin-top: 10%;
+  margin-top: 5%;
   color: #495057;
 }
 
@@ -132,25 +133,37 @@ body {
   height: 90%;
 }
 
-/* @media (max-width: 1920px), (max-height: 1080px) {
+@media (max-width: 1920px), (max-height: 1080px) {
   .container {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    min-width: 80vh;
-    min-height: 50vh;
+    min-width: 90vh;
+    min-height: 60vh;
     margin: auto 10px;
     padding: 2rem;
   }
-} */
+  .bill-container {
+    margin: 0 auto 0 auto;
+  }
 
-@media (max-width: 1280px), (max-height: 720px) {
+  .tip-container {
+    margin: 0 auto 0 auto;
+  }
+  .btnReset {
+    margin: auto auto 0 auto;
+    width: 80%;
+    height: 50%;
+  }
+}
+
+/* @media (max-width: 1280px), (max-height: 720px) {
   .container {
     min-width: 60vh;
     min-height: 60vh;
     margin: auto 10px;
     padding: 2rem 1.2rem;
-    display: block;
+    display: flex;
     justify-content: space-between;
   }
   .bill-container {
@@ -164,9 +177,33 @@ body {
     padding: 1rem;
     margin: 10px auto;
   }
+} */
+
+@media (max-width: 360px), (max-height: 800px) {
+  .container {
+    min-width: 40vh;
+    min-height: 30vh;
+    margin: auto 10px;
+    padding: 1rem;
+    display: block;
+    justify-content: space-between;
+  }
+  .bill-container {
+    margin: 10% auto 10% auto;
+  }
+
+  .tip-container {
+    margin: 10% auto 0 auto;
+  }
+
+  .btnReset {
+    margin: auto auto 0 auto;
+    width: 80%;
+    height: 100%;
+  }
 }
 
-@media (max-width: 390px), (max-height: 844px) {
+/* @media (max-width: 390px), (max-height: 844px) {
   .container {
     min-width: 40vh;
     min-height: 80vh;
@@ -186,22 +223,4 @@ body {
     padding: 1rem;
     margin: 10px auto;
   }
-}
-
-@media (max-width: 430px), (max-height: 932px) {
-  .container {
-    min-width: 40vh;
-    min-height: 40px;
-    margin: auto 10px;
-    padding: 1rem;
-    display: block;
-    justify-content: space-between;
-  }
-  .bill-container {
-    margin: 10% auto 10% auto;
-  }
-
-  .tip-container {
-    margin: 10% auto 10% auto;
-  }
-}
+} */
