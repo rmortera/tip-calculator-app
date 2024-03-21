@@ -206,13 +206,13 @@ footer {
   .container {
     min-width: 40vh;
     min-height: 30vh;
-    margin: auto auto 1rem auto;
+    margin: 1rem auto 1rem auto;
     padding: 1rem;
     display: block;
     justify-content: space-between;
   }
   .bill-container {
-    margin: 10% auto 10% auto;
+    margin: auto auto 10% auto;
   }
 
   .tip-container {
@@ -231,6 +231,10 @@ footer {
     margin: auto auto 0 auto;
     width: 80%;
     height: 30px;
+  }
+
+  footer {
+    margin: 0 auto 1rem auto;
   }
 }
 
